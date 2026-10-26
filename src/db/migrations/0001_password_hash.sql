@@ -1,0 +1,9 @@
+BEGIN;
+
+ALTER TABLE users
+  ADD COLUMN IF NOT EXISTS password_hash TEXT;
+
+ALTER TABLE users
+  ALTER COLUMN password DROP NOT NULL;
+
+COMMIT;

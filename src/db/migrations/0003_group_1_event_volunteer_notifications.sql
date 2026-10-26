@@ -1,0 +1,10 @@
+BEGIN;
+
+ALTER TABLE volunteers
+  ADD COLUMN IF NOT EXISTS reason TEXT,
+  ADD COLUMN IF NOT EXISTS skills TEXT;
+
+ALTER TABLE notifications
+  ADD COLUMN IF NOT EXISTS recipient_email TEXT;
+
+COMMIT;

@@ -1,0 +1,6 @@
+{
+  "name": "OurCampus Connect",
+  "description": "A Smart College Event Management System for R.K. Talreja College",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
