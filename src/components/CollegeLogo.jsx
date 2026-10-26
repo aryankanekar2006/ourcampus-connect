@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import collegeLogo from './CollegeLogo.png';
 
 export const CollegeLogo = ({
   size = 'md',
@@ -7,14 +8,10 @@ export const CollegeLogo = ({
   src
 }) => {
   // Image candidates list
-  const logoCandidates = [
-    src,
-    '/src/components/CollegeLogo.png',
-    'CollegeLogo.png',
-    '/CollegeLogo.png',
-    'logo.png',
-    '/logo.png'
-  ].filter(Boolean);
+ const logoCandidates = [
+  src,
+  collegeLogo
+].filter(Boolean);
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [imgError, setImgError] = useState(false);
